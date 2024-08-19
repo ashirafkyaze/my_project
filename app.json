@@ -3,6 +3,7 @@
     "name": "my_project",
     "slug": "my_project",
     "version": "1.0.0",
+    "scheme":"myProject",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -14,6 +15,7 @@
     "ios": {
       "supportsTablet": true
     },
+    
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
