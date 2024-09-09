@@ -11,6 +11,9 @@ import { Ionicons } from "@expo/vector-icons";
 import CartScreen from "../screens/CartScreen";
 import ProfileScreen from "../screens/ProfileScreen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import ProductInfoScreen from "../screens/ProductInfoScreen";
+import AddAddressScreen from "../screens/AddAddressScreen";
+import AddressScreen from "../screens/AddressScreen";
 
 const StackNavigator = () => {
 
@@ -75,6 +78,9 @@ const StackNavigator = () => {
                 <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
                 <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
                 <Stack.Screen name="Main" component={BottomTabs} options={{ headerShown: false }} />
+                <Stack.Screen name="Info" component={ProductInfoScreen} options={{ headerShown: false }} />
+                <Stack.Screen name="Address" component={AddAddressScreen} options={{ headerShown: false }} />
+                <Stack.Screen name="Add" component={AddressScreen} options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     )
