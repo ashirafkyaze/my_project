@@ -6,7 +6,8 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import axios from "axios";
-import { UserType } from "../UserContext";
+import { UserType } from "./UserContext";
+
 const AddAddressScreen = () => {
     const navigation = useNavigation();
     const [addresses, setAddresses] = useState([]);

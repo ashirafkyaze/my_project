@@ -17,6 +17,7 @@ const CartScreen = () => {
         ?.map((item) => item.price * item.quantity)
         .reduce((curr, prev) => curr + prev, 0);
     const dispatch = useDispatch();
+    const navigation = useNavigation();
     const increaseQuantity = (item) => {
         dispatch(incementQuantity(item));
     };
@@ -26,7 +27,7 @@ const CartScreen = () => {
     const deleteItem = (item) => {
         dispatch(removeFromCart(item));
     };
-    const navigation = useNavigation();
+    
     return (
         <ScrollView style={{ marginTop: 55, flex: 1, backgroundColor: "white" }}>
             <View
