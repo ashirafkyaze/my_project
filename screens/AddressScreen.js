@@ -1,11 +1,10 @@
 import react from "react";
-import { View } from "react-native-reanimated/lib/typescript/Animated";
 import { View, Text, StyleSheet, ScrollView, Pressable, TextInput, Alert } from "react-native";
 //import { ScrollView } from "react-native-gesture-handler";
 import React, { useEffect, useState, useContext } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import jwt_decode from "jwt-decode"
-import { UserType } from "../UserContext";
+import { UserType } from "./UserContext";
 import axios from "axios";
 import { useNavigation } from "@react-navigation/native";
 

@@ -12,6 +12,7 @@ import DropDownPicker from "react-native-dropdown-picker";
 import { useNavigation } from "@react-navigation/native";
 import { useSelector } from "react-redux";
 import { BottomModal, ModalContent, SlideAnimation } from "react-native-modals";
+import { UserType } from "./UserContext";
 
 /*import AntDesign from '@expo/vector-icons/AntDesign';
 import { Feather } from "@expo/vector-icons";
@@ -263,7 +264,7 @@ const HomeScreen = () => {
     //console.log("Products", products)
     return (
         <>
-            <SafeAreaView style={{ paddingTop: Platform.OS == "ios" ? 40 : 0, flex: 1, backgroundColor: "white" }}>
+            <SafeAreaView style={{ paddingTop: Platform.OS == "ios" ? 40 : 0, flex: 1, backgroundColor: "white" ,marginTop:0.01 }}>
                 <Text>HomeScreen</Text>
 
                 <ScrollView>

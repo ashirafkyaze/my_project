@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View, ScrollView, Pressable,Alert } from "react-native";
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
-import { UserType } from "../UserContext";
+import { UserType } from "./UserContext";
 import { Entypo } from "@expo/vector-icons";
 import { FontAwesome5, MaterialIcons } from "@expo/vector-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { cleanCart } from "../redux/CartReducer";
 import { useNavigation } from "@react-navigation/native";
-import RazorpayCheckout from "react-native-razorpay";
+
 
 const ConfirmationScreen = () => {
   const steps = [
@@ -84,9 +84,9 @@ const ConfirmationScreen = () => {
         theme: { color: "#F37254" },
       };
 
-      const data = await RazorpayCheckout.open(options);
+      //const data = await RazorpayCheckout.open(options);
 
-      console.log(data)
+      //console.log(data)
 
       const orderData = {
         userId: userId,
